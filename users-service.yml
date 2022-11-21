@@ -2,10 +2,6 @@ server:
   port: 8181
 
 spring:
-  datasource:
-    url: jdbc:postgresql://host.minikube.internal:5422/users-db
-    username: postgres
-    password: 1234
   jpa:
     properties:
       hibernate:
@@ -20,8 +16,5 @@ spring:
       mode: always
 
 eureka:
-  client:
-    service-url:
-      defaultZone: http://service-discovery.default.svc.cluster.local/eureka/
   instance:
     instance-id: ${spring.application.name}:${random.uuid}
