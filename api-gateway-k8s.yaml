@@ -1,0 +1,29 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-discovery.default.svc.cluster.local/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: users-service
+          uri: http://users-service.default.svc.cluster.local
+          predicates:
+            - Path= /users/**
+        - id: movies-service
+          uri: http://movies-service.default.svc.cluster.local
+          predicates:
+            - Path= /movies/**
+        - id: comments-service
+          uri: http://comments-service.default.svc.cluster.local
+          predicates:
+            - Path= /comments/**
+        - id: reviews-service
+          uri: http://reviews-service.default.svc.cluster.local
+          predicates:
+            - Path= /reviews/**
+        - id: series-service
+          uri: http://series-service.default.svc.cluster.local
+          predicates:
+            - Path= /series/**
