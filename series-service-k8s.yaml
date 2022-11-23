@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: rabbitmq-service.default.svc.cluster.local
+    port: 80
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:postgresql://host.minikube.internal:5433/series-db
+    username: postgres
+    password: 1234
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-discovery.default.svc.cluster.local/eureka/
