@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+    host: rabbitmq-service.default.svc.cluster.local
+    port: 80
+    username: guest
+    password: guest
   datasource:
     url: jdbc:postgresql://host.minikube.internal:5422/users-db
     username: postgres
