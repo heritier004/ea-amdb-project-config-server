@@ -19,10 +19,10 @@ spring:
           uri: http://comments-service.default.svc.cluster.local
           predicates:
             - Path= /comments/**
-        - id: reviews-service
-          uri: http://reviews-service.default.svc.cluster.local
+        - id: rating-service
+          uri: http://rating-service.default.svc.cluster.local
           predicates:
-            - Path= /reviews/**
+            - Path= /rates/**
         - id: series-service
           uri: http://series-service.default.svc.cluster.local
           predicates:

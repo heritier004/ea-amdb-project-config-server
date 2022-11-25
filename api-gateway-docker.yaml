@@ -19,10 +19,10 @@ spring:
           uri: http://comments-service:8383
           predicates:
             - Path= /comments/**
-        - id: reviews-service
-          uri: http://reviews-service:8484
+        - id: rating-service
+          uri: http://rating-service:8484
           predicates:
-            - Path= /reviews/**
+            - Path= /rates/**
         - id: series-service
           uri: http://series-service:8585
           predicates:
