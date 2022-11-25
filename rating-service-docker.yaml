@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://rating-db-server:5435/rating-db
+    username: postgres
+    password: 1234
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://service-discovery:8761/eureka/
