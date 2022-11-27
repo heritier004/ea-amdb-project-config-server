@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://rating-db-server:5435/rating-db
+    url: jdbc:postgresql://rating-db-server:5432/rating-db
     username: postgres
     password: 1234
 

@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://host.minikube.internal:5435/series-db
+    url: jdbc:postgresql://host.minikube.internal:5435/rating-db
     username: postgres
     password: 1234
 
