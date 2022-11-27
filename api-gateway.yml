@@ -1,23 +1,21 @@
 server:
   port: 4848
+  forward-headers-strategy: framework
 
-# spring:
-#   security:
-#     oauth2:
-#       client:
-#         registration:
-#           api-gateway-oauth2:
-#             client-id: api-gateway-client
-#             client-secret: acb846d0-81ef-4fc3-89d7-ff355f08eb81
-#             scope: 
-#               - openid
-#               roles
-#             authorization-grant-type: authorization_code
-#             redirect-uri: http://localhost:8080/login/oauth2/code/api-gateway-client
-#         provider:
-#           api-gateway-oauth2:
-#             issuer-uri: http://localhost:8080/auth/realms/api-gateway
 
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.uuid}
+
+springdoc:
+  swagger-ui:
+    path: /
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: fda3a9b34d5dd200ee92
+            client-secret: bd0004aa728d9944381ae826a0cf51db588635b5
